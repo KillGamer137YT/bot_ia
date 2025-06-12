@@ -7,7 +7,7 @@ MODELOS = ['llama3-8b-8192' , 'llama3-70b-8192' , 'mixtral-8x7b-32768']
 # lista donde se almacenaran los modelos de IA
 
 def crear_usuario_groq():
-    clave_secreta = st.secrets["API_Key"]
+    clave_secreta = st.secrets["CLAVE_API"]
     return Groq(api_key=clave_secreta)
 
 def configurar_pagina():
